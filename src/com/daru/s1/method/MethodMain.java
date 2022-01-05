@@ -7,6 +7,7 @@ public class MethodMain {
 	public static void main(String[] args) {
 
 		System.out.println("MainMethod Start");
+		System.out.println("Conflict Test");
 
 		//메모리영역이 다르면 중복선언이 아님
 		
