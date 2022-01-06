@@ -3,7 +3,7 @@ package com.daru.s1.student;
 public class StudentView {
 	//출력 전용
 
-	public void viewMessage(String message) {
+	public void view(String message) {
 		//문자열 출력
 		//외부에서문자열을 하나 받음
 		//매개변수를 통해서
@@ -14,7 +14,7 @@ public class StudentView {
 	}
 	
 	//메서드명 viewStudent : 학생의 모든 정보를 출력하는 메서드
-	public void viewStudent(Student student) {
+	public void view(Student student) {
 		System.out.println("이름 : " + student.name);
 		System.out.println("번호 : " + student.num);
 		System.out.println("국어 : " + student.kor);
@@ -28,11 +28,11 @@ public class StudentView {
 
 		
 	//viewStudents : 여러명 학생의 모든 정보를 출력하는 메서드
-		public void viewStudents(Student [] students) {
+		public void view(Student [] students) {
 	for(int i=0;i<students.length;i++) {
 		//Student student = students[i];
 		//this.viewStudent(student);
-		this.viewStudent(students[i]);
+		this.view(students[i]);
 		}
 	}
 	

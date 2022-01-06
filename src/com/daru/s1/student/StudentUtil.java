@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class StudentUtil {
 	Scanner sc;
+	
+	public StudentUtil() {
+		this.sc = new Scanner(System.in);
+		
+	}
+	
 	// 학생을 생성하고 정보를 입력받는 곳
 	public void initUtil() {
 		sc = new Scanner(System.in);

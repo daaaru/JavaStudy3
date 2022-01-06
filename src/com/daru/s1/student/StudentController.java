@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class StudentController {
 
-	public void start() {
+	public void start() { //void 리턴값없음 ()는 매개변수 선언
 		boolean check = true;
 		// switch case사용
 		Scanner sc = new Scanner(System.in);
 		StudentUtil studentUtil = new StudentUtil();
-		studentUtil.initUtil();
+		//studentUtil.initUtil(); //메서드호출
 		Student[] students = null;
 		StudentView studentView = new StudentView();
 
@@ -27,21 +27,21 @@ public class StudentController {
 				break;
 			case 2:
 				if (students != null) {
-					studentView.viewStudents(students);
+					studentView.view(students);
 				} else {
-					studentView.viewMessage("학생정보를 먼저입력하세요");
+					studentView.view("학생정보를 먼저입력하세요");
 				}
 				break;
 			case 3:
 				if (students == null) {
-					studentView.viewMessage("학생 정보가 없습니다");
+					studentView.view("학생 정보가 없습니다");
 					continue;
 				}
 				Student student = studentUtil.search(students);
 				if (student != null) {
-					studentView.viewStudent(student);
+					studentView.view(student);
 				} else {
-					studentView.viewMessage("검색결과가 없습니다");
+					studentView.view("검색결과가 없습니다");
 				}
 				break;
 			default:
