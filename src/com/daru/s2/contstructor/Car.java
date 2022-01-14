@@ -4,7 +4,7 @@ package com.daru.s2.contstructor;
 public class Car {
 	
 	String brand;
-	String company;
+	public static String company = "Kia";;
 	String color;
 	int cc;
 	
@@ -43,7 +43,6 @@ public class Car {
 //		this.cc =5000;
 	}
 	public Car(String brand, String color, int cc) {
-		this.company="Kia";
 		this.brand=brand;
 		this.color=color;
 		this.cc =cc;
@@ -54,7 +53,7 @@ public class Car {
 	//멤버메서드
 	public void info() {
 		System.out.println("멤버 메서드");
-		System.out.println(this.company);
+		System.out.println(Car.company);//클래스명.변수명으로 접근함
 		System.out.println(this.brand);
 		System.out.println(this.color);
 		System.out.println(this.cc);

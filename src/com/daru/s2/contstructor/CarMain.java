@@ -5,9 +5,10 @@ public class CarMain {
 
 	public static void main(String[] args) {
 	
+		Car.company = "BMW";
+
 		//변수선언 = new 생성자 호출
 		Car car = new Car();
-		
 		car.info();
 		//car.Car();는 에러
 		
